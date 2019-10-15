@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/pulse.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron ">
+            <h1 class="display-3">Anytime is Train Time</h1>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+            </div>
+            <blockquote class="blockquote" style="text-align:right">
+                <p class="mb-1">"The trains always arrive at your station. The question is which one to take?"</p>
+                <footer class="blockquote-footer"><cite title="Source Title">Mehmet Murat ildan</cite></footer>
+            </blockquote>
+        </div>
+
+        <div class="container" id="schedule">
+            <h2 class="bg-primary text-white">Current Train Schedule</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <td>LON-PAR</td>
+                        <td>Paris</td>
+                        <td>180</td>
+                        <td>16:30</td>
+                        <td>22</td>
+                    </tr>
+
+                    <tr class="table-primary">
+                        <td>PAR-LON</td>
+                        <td>Londres</td>
+                        <td>240</td>
+                        <td>17:00</td>
+                        <td>52</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                <tbody>
+            </table>
+        </div>
+
+        <div class="container" id="new-train">
+            <h2 class="bg-primary text-white">Add train</h2>
+            <div id="form">
+                <form>
+                    Train Name:<br>
+                    <input type="text" id="trainname"><br>
+                    Destination:<br>
+                    <input type="text" id="destination"><br>
+                    First Train Time (HH:mm - military time):<br>
+                    <input type="text" id="firsttraintime"><br>
+                    Frequency (min):<br>
+                    <input type="text" id="frequency"><br>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
