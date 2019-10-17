@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/pulse.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 </head>
 
 <body>
@@ -40,29 +42,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="table-primary">
-                        <td>LON-PAR</td>
-                        <td>Paris</td>
-                        <td>180</td>
-                        <td>16:30</td>
-                        <td>22</td>
-                    </tr>
 
-                    <tr class="table-primary">
-                        <td>PAR-LON</td>
-                        <td>Londres</td>
-                        <td>240</td>
-                        <td>17:00</td>
-                        <td>52</td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
                 <tbody>
             </table>
         </div>
@@ -72,11 +52,11 @@
             <div id="form">
                 <form>
                     Train Name:<br>
-                    <input type="text" id="trainname"><br>
+                    <input type="text" id="train-name"><br>
                     Destination:<br>
                     <input type="text" id="destination"><br>
                     First Train Time (HH:mm - military time):<br>
-                    <input type="text" id="firsttraintime"><br>
+                    <input type="text" id="first-train"><br>
                     Frequency (min):<br>
                     <input type="text" id="frequency"><br>
 
@@ -88,8 +68,11 @@
 
     </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
 
