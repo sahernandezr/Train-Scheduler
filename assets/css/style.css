@@ -8,3 +8,11 @@
 table {
     text-align: center;
 }
+
+#train-name, #destination, #first-train, #frequency {
+width: 100%;
+}
+
+.bg-primary {
+    text-align: center;
+}
